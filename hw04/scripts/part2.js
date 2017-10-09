@@ -21,6 +21,28 @@ const setLanguage = (code) => {
 
 
 const getData = () => {
+    /*
+    ----------------------------------------------------------------------------
+    ANSWERS
+    ----------------------------------------------------------------------------
+    1. The getData function's job is to request the most recent 15
+       status updates from Twitter. This request is determined by:
+        a) The search term (keyword) that the user types into the input
+           element with the id="term."
+           -AND-
+        b) The languageCode (that gets set based on the language the user
+           chooses)
+
+    Once this data has been retrieved, the function then prints all of the
+    JSON data to the screen by populating the innerHTML of the "pre" element.
+
+    2. jsonData.statuses[0]
+
+    3. jsonData.statuses[4].text
+
+    4. Extra Credit: jsonData.statuses[1].user.name
+    ----------------------------------------------------------------------------
+    */
     const term = document.getElementById('term').value
     const baseURL = 'https://mmart168-twitter-proxy.herokuapp.com/1.1/search/tweets.json?q=' + term
     twitterURL = baseURL + '&lang=' + languageCode

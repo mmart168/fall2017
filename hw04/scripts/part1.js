@@ -2,14 +2,22 @@ let language
 let languageCode
 
 const setLanguage = (code) => {
-    //Note: language codes here: https://www.w3schools.com/tags/ref_language_codes.asp
+    /*
+    ----------------------------------------------------------------------------
+    ANSWERS
+    ----------------------------------------------------------------------------
+    The setLanguage method's job is to set the languageCode variable (which
+    is a global variable), based on the button the user clicked on. Each
+    button is associated with a different language code parameter.
+    ----------------------------------------------------------------------------
+    */
     languageCode = code
-    if (code === 'ru') {
-        language = 'Russian'
-    } else if (code === 'es') {
-        language = 'Spanish'
+    if (code === 'fr') {
+        language = 'French'
+    } else if (code === 'it') {
+        language = 'Italian'
     } else {
-        language = 'English'
+        language = 'Chinese'
     }
     document.getElementById('language').innerHTML = language
 }
