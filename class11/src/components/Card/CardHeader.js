@@ -1,13 +1,15 @@
 import React from 'react'
 import styles from './Card.css'
 
-const CardHeader = () => 
-  <header className='df ff-row ff-vcenter jc-sb'>
-    <div className='df ff-row ff-vcenter'>
-      <img src={'assets/userAvatars/' + this.props.avatar + '.jpg'} alt='user photo' className='sq-50px ovf-hidden br-circle mas'/>
-      <a href='#' className='helvetica blue-text'>{this.props.name}</a>
+const CardHeader = (props) =>
+  <header className={styles.header}>
+    <div className={styles.userInfo}>
+      <div className={styles.avatar}>
+        <img src={props.avatar} alt='user photo' className={styles.avatarImage}/>
+      </div>
+      <a href='#' className={styles.username}>{props.name}</a>
     </div>
-    <p className='helvetica grey-text'>{this.props.timestamp}</p>
+    <p className='helvetica grey-text'>{props.timestamp}</p>
   </header>
 
 export default CardHeader

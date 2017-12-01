@@ -1,0 +1,53 @@
+.card {
+  max-width: 38em;
+  margin: .5em;
+}
+
+.iconRow {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: .5em;
+}
+
+.header {
+  composes: iconRow;
+  margin-top: -2px;
+  border: 1px solid #bdc3c7;
+}
+
+.activeFavorite {
+  width: 1.5em;
+  fill: #e74c3c;
+}
+
+.icon {
+  width: 1.4em;
+  padding: .2em;
+  stroke: #000;
+  stroke-width: 4px;
+  fill: none;
+}
+
+.userInfo {
+ display: flex;
+ align-items: center;
+}
+
+.username {
+  font-weight: 700;
+  padding-left: .5em;
+  text-decoration: none;
+}
+
+.avatar {
+  width: 3em;
+  height: 3em;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.avatarImage {
+  max-width: 100%;
+  max-height: 100%;
+}
