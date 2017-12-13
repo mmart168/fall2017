@@ -2,7 +2,8 @@
   "rules": {
     "semi": ["error", "never"],
     "no-console": 0,
-    "quotes": ["error", "single"]
+    "quotes": ["error", "single"],
+    "no-var": "error"
   },
   "env": {
     "es6": true,
